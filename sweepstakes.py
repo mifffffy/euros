@@ -40,6 +40,7 @@ seed = st.number_input("Enter a random seed:", value=42)
 
 if st.button("Assign Teams"):
     if names:
+        st.balloons()
         assignments, remaining_teams = assign_teams(names, seed)
         st.write("Team assignments:")
         for name, assigned_teams in assignments.items():
